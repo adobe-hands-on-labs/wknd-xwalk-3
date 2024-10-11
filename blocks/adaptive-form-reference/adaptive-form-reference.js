@@ -1,6 +1,6 @@
 // Sample JSON data (use your data if different)
 async function generateForm(fieldDiv, formImg, containerId, formPath) {
-  const formurl = `https://author-p51327-e1446332.adobeaemcloud.com${formPath}.-1.json`;
+  const formurl = `https://author-p29703-e1463449.adobeaemcloud.com${formPath}.-1.json`;
   const response = await fetch(formurl);
     if (response.ok) {
     
@@ -13,7 +13,7 @@ async function generateForm(fieldDiv, formImg, containerId, formPath) {
       imageDiv.className = "form-image-container";
 
       const imgElement = document.createElement('img');
-      imgElement.src = formImg ? formImg : 'https://author-p51327-e1446332.adobeaemcloud.com/content/dam/aemcshol/mobile/adobestock-185324648.jpg'; // Set the image URL here
+      imgElement.src = formImg ? formImg : 'https://author-p29703-e1463449.adobeaemcloud.com/content/dam/aemcshol/mobile/adobestock-185324648.jpg'; // Set the image URL here
       imgElement.alt = 'Placeholder Image'; // Optionally, set alt text
       imgElement.width = 700; // Optionally, set image width
       

@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 export default async function decorate(block) {
-  const aempublishurl = 'https://publish-p51327-e1446332.adobeaemcloud.com';
-  const aemauthorurl = 'https://author-p51327-e1446332.adobeaemcloud.com';
+  const aempublishurl = 'https://publish-p29703-e1463449.adobeaemcloud.com';
+  const aemauthorurl = 'https://author-p29703-e1463449.adobeaemcloud.com';
   const persistedquery = '/graphql/execute.json/wknd-shared/offer-by-path';
   const offerpath = block.querySelector(':scope div:nth-child(1) > div a').innerHTML.trim();
   const variationname = "master";//block.querySelector(':scope div:nth-child(2) > div > p').innerText ? block.querySelector(':scope div:nth-child(2) > div > p').innerText : 'main';
@@ -12,7 +12,7 @@ export default async function decorate(block) {
     : `${aempublishurl}${persistedquery};cfpath=${offerpath}`;
   const options = { credentials: 'include' };
 
-  // console.log(url); //https://author-p123917-e1220159.adobeaemcloud.com/graphql/execute.json/securbank/OfferByPath;path=/content/dam/securbank/en/offers/997;variation=main;ts=172.03956935404463
+  // console.log(url); //https://author-p29703-e1463449.adobeaemcloud.com/graphql/execute.json/securbank/OfferByPath;path=/content/dam/securbank/en/offers/997;variation=main;ts=172.03956935404463
 
   const cfReq = await fetch(offerpath+".-1.json", options)
     .then((response) => response.json())

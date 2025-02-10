@@ -16,7 +16,8 @@
         "text",
         "image",
         "button",
-        "title"
+        "title",
+        "card"
       ]
     },
     {
@@ -38,7 +39,8 @@
         "article-details",        
         "simple-form",
         "form",
-        "form-embed"
+        "form-embed",
+        "cards"
       ]
     },
     {
@@ -60,24 +62,30 @@
       ]
     },
     {
-    "id": "form",
-    "components": [
-      "checkbox",
-      "date-input",
-      "drop-down",
-      "email",
-      "file-input",
-      "form-button",
-      "form-fragment",
-      "form-image",
-      "form-reset-button",
-      "form-submit-button",
-      "number-input",
-      "panel",
-      "plain-text",
-      "radio-group",
-      "text-input",
-      "wizard"
-    ]
-  }
-  ]
+      "id": "cards",
+      "components": [
+        "card"
+      ]
+    },
+    {
+      "id": "form",
+      "components": [
+        "checkbox",
+        "date-input",
+        "drop-down",
+        "email",
+        "file-input",
+        "form-button",
+        "form-fragment",
+        "form-image",
+        "form-reset-button",
+        "form-submit-button",
+        "number-input",
+        "panel",
+        "plain-text",
+        "radio-group",
+        "text-input",
+        "wizard"
+      ]
+    }
+]
